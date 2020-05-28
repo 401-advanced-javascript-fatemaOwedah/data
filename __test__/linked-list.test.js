@@ -1,5 +1,5 @@
 'use strict';
-const LinkedList = require('./linked-list');
+const LinkedList = require('../challenges/linkedList/linked-list');
 describe('Linked List module', () => {
     it('constructor()', () => {
         let creatLink = new LinkedList();

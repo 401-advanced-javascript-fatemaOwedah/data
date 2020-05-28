@@ -1,0 +1,23 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linked-list.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-fatemaOwedah/data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-fatemaOwedah/data/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-fatemaOwedah/data#readme",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}

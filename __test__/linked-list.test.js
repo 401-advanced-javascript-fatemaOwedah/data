@@ -51,4 +51,30 @@ describe('Linked List module', () => {
         listNew.insert('4');
         expect(listNew.toString()).toEqual('{1} -> {2} -> {3} -> {4} -> NULL');
     });
+    it('test append', () => {
+        let newLinkedLi = new LinkedList();
+        newLinkedLi.append('A');
+        newLinkedLi.append('B');
+        newLinkedLi.append('C');
+        newLinkedLi.append('F');
+        expect(newLinkedLi.toString()).toEqual('{A} -> {B} -> {C} -> {F} -> NULL');
+    });
+    it('test insert after', () => {
+        let newLinkedLi = new LinkedList();
+        newLinkedLi.insert('A');
+        newLinkedLi.insert('B');
+        newLinkedLi.insert('C');
+        newLinkedLi.insertAfter('C','K');
+        let newStr = '{A} -> {B} -> {C} -> {K} -> NULL';
+        expect(newLinkedLi.toString()).toEqual(newStr);
+    });
+    it('test insert before', () => {
+        let newLinkedLi = new LinkedList();
+        newLinkedLi.insert('A');
+        newLinkedLi.insert('B');
+        newLinkedLi.insert('C');
+        newLinkedLi.insertBefore('C', 'F');
+        let newstr = '{A} -> {B} -> {F} -> {C} -> NULL';
+        expect(newLinkedLi.toString()).toEqual(newstr);
+    });
 })

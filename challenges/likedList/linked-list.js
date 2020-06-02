@@ -1,86 +1,58 @@
 'use strict';
+const linkList = {};
 class Node {
-    constructor(val) {
-        this.val = val;
+    constructor(value) {
+        this.value = value;
         this.next = null;
     }
 }
+
 class LinkedList {
     constructor() {
         this.head = null;
     }
-    insert(val) {
-        let newNode = new Node(val);
-        if (!this.head) {
-            this.head = newNode;
-            return this;
-        }
-        let currentNode = this.head;
-        while (currentNode.next) {
-            currentNode = currentNode.next;
-        }
-        currentNode.next = newNode;
-    }
-    includes(val) {
-        let currentNode = this.head;
-        while (currentNode) {
-            if (currentNode.val === val) {
-                return true;
+    insert(value) {
+        if (value) {
+            let node = new Node(value);
+            if (!this.head) {
+                this.head = node;
+                return this;
             }
-            currentNode = currentNode.next;
-        }
-        return false;
-    }
-    toString() {
-        let currentNode = this.head;
-        let str = `{${currentNode.val}} ->`;
-        while (currentNode.next) {
-            currentNode = currentNode.next;
-            str = str + ` {${currentNode.val}} ->`;
-        }
-        str = str + ` NULL`
-        return str;
-    }
-    append(value) {
-        let node = new Node(value);
-        let current = this.head;
-        if (!current) {
+            let newNode = this.head;
             this.head = node;
+            this.head.next = newNode;
             return this;
         }
+    }
+    kthFromEnd(k) {
+        let allNodes = [];
+        allNodes[0] = this.head;
+        let current = this.head;
+        let i = 1;
         while (current.next) {
             current = current.next;
+            allNodes[i] = current;
+            i++;
         }
-        current.next = node;
-    }
-    insertBefore(value, newVal) {
-        let current = this.head;
-        let newNode = new Node(newVal);
-        let prevNode = null;
-        while (current) {
-            if (current.val === value) {
-                if (prevNode === null) {
-                    this.head = newNode;
-                } else {
-                    prevNode.next = newNode;
-                }
-                newNode.next = current;
-            }
-            prevNode = current;
-            current = current.next;
-        }
-    }
-    insertAfter(value, newVal) {
-        let newNode = new Node(newVal);
-        let current = this.head;
-        while (current) {
-            if (current.val === value) {
-                let valueNum = newNode.next;
-                current.next = newNode;
-                newNode.next = valueNum;
-            }
-            current = current.next;
+        if (k > allNodes.length) {
+            return 'Exception';
+        } else if (k <= 0) {
+            return 'Exception';
+        } else if (typeof (k) != 'number') {
+            return 'Exception';
+        } else {
+            return allNodes[allNodes.length - k].value;
         }
     }
 }
-module.exports = LinkedList;
+
+const linkedListInstance = new LinkedList();
+linkedListInstance.insert(7);
+linkedListInstance.insert(5);
+linkedListInstance.insert(20);
+linkedListInstance.insert(15);
+console.log(linkedListInstance.kthFromEnd(3));
+
+linkList.Node = Node;
+linkList.LinkedList = LinkedList;
+module.exports = linkList;

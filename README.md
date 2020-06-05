@@ -8,3 +8,4 @@ CodeChallenge-05 | [CodeChallenge-05](https://github.com/401-advanced-javascript
 CodeChallenge-06 | [CodeChallenge-06](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/2)
 CodeChallenge-07 | [CodeChallenge-07](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/3)
 CodeChallenge-08 | [CodeChallenge-08](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/5)
+CodeChallenge-10 | [CodeChallenge-10](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/6)

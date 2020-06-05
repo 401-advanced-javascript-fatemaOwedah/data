@@ -29,6 +29,6 @@ describe('happy path', () => {
             currentNode = currentNode.next;
             i++;
         }
-        console.log(list2);
+        console.log(list1);
     });
 });

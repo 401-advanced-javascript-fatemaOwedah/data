@@ -1,12 +1,11 @@
 # data
-## Stacks and Queues
-create Node class that has properties for the value stored in the Node, and a pointer to the next node,Create a Stack class that has a top property. It creates an empty Stack when instantiated this class has a method: push, pop, peek, isEmpty,
-Create a Queue class that has a front property. It creates an empty Queue when instantiated this class has this method: enqueue,dequeue,peek, isEmpty.
+## Linked List
+create linked list with node and method of append it take a value as a arg insertBefore it take(value, newVal) as arg, insertAfter it take (value, newVal) as arg.
+## Challenge
+the challenge was in how to use linked list was in insert before and after.
 
 ## Approach & Efficiency
-create a class name node and class name Stack inside this class you must add 4 method after you finish test the module.
-create class name Queue inside this class you must add 4
-
+create a class name node and class name linked list inside this class you must add 3 method after you finish test the module.
 
 ## Solution
-![Solution](/assets/stacks&queue.jpeg)
+![Solution](/assets/ll-insertion.jpeg)

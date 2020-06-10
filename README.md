@@ -1,9 +1,9 @@
 # data
-## Stacks and Queues
-create PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods enqueue and dequeue), but will internally only utilize 2 Stack objects.
+## multi bracket validation
+create function called multiBracketValidation(input), should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:Round Brackets : (), Square Brackets : [], Curly Brackets : {}.
 
 ## Approach & Efficiency
-create a class name PseudoQueue inside this class you must add 2 method after you finish test the module.
+create function called multiBracketValidation(input), and should return a boolean.
 
 
 ## Solution

@@ -7,4 +7,4 @@ create function called multiBracketValidation(input), and should return a boolea
 
 
 ## Solution
-![Solution](/assets/queue.jpeg)
+![Solution](/assets/multi.jpeg)

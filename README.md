@@ -1,11 +1,10 @@
 # data
 ## Stacks and Queues
-create Node class that has properties for the value stored in the Node, and a pointer to the next node,Create a Stack class that has a top property. It creates an empty Stack when instantiated this class has a method: push, pop, peek, isEmpty,
-Create a Queue class that has a front property. It creates an empty Queue when instantiated this class has this method: enqueue,dequeue,peek, isEmpty.
-
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach, it have this method:enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 ## Approach & Efficiency
-create a class name node and class name Stack inside this class you must add 4 method after you finish test the module.
-create class name Queue inside this class you must add 4
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach, it have this method:enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
 
 ## Solution

@@ -10,4 +10,6 @@ CodeChallenge-07 | [CodeChallenge-07](https://github.com/401-advanced-javascript
 CodeChallenge-08 | [CodeChallenge-08](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/8)
 CodeChallenge-10 | [CodeChallenge-10](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/6)
 CodeChallenge-11 | [CodeChallenge-11](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/9)
+CodeChallenge-12 | [CodeChallenge-12](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/11)
 CodeChallenge-13 | [CodeChallenge-11](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/10)
+CodeChallenge-15 | [CodeChallenge-15](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/12)

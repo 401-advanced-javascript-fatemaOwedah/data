@@ -1,15 +1,12 @@
 # data
-Class    | Link
----------|---------
-CodeChallenge-01 | [CodeChallenge-01](/challenges/arrayReverse/array-reverse.js)
-CodeChallenge-02 | [CodeChallenge-02](/challenges/arrayShift/array-shift.js)
-CodeChallenge-03 | [CodeChallenge-03](/challenges/arrayBinarySearch)
-CodeChallenge-05 | [CodeChallenge-05](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/1)
-CodeChallenge-06 | [CodeChallenge-06](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/7)
-CodeChallenge-07 | [CodeChallenge-07](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/3)
-CodeChallenge-08 | [CodeChallenge-08](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/8)
-CodeChallenge-10 | [CodeChallenge-10](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/6)
-CodeChallenge-11 | [CodeChallenge-11](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/9)
-CodeChallenge-12 | [CodeChallenge-12](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/11)
-CodeChallenge-13 | [CodeChallenge-11](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/10)
-CodeChallenge-15 | [CodeChallenge-15](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/12)
+
+## Stacks and Queues
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach, it have this method:enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+## Approach & Efficiency
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach, it have this method:enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+
+
+## Solution
+![Solution](/assets/animal.jpeg)

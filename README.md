@@ -8,4 +8,4 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 
 
 ## Solution
-![Solution](/assets/stacks&queue.jpeg)
+![Solution](/assets/animal.jpeg)

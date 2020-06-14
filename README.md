@@ -1,11 +1,9 @@
 # data
 ## Stacks and Queues
-Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach, it have this method:enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
-dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+Create a function called FizzBuzzTree which takes a tree as an argument,etermine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original.
 ## Approach & Efficiency
-Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach, it have this method:enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
-dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+Create a function called FizzBuzzTree which takes a tree as an argument,etermine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original.
 
 
 ## Solution
-![Solution](/assets/cc15.jpeg)
+![Solution](/assets/cc16.jpeg)

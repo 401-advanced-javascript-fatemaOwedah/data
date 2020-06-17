@@ -1,50 +1,39 @@
 'use strict';
-const {BinarySearchTree, BinaryTree, Node, Queue} = require('../challenges/tree/binary-search-tree');
 
+const findMaximumValue = require('../challenges/tree/binary-search-tree');
 
-describe(`tree traversal`, () => {
-      
-  it('Can successfully instantiate an empty tree', () => {
-    const tree = new BinarySearchTree();
-    expect(tree.root).toBe(null);
+describe('Find Maximum Binary Tree Module', ()=>{
+  let tree2 = null;
+  let tree3 = null;
+  beforeAll(()=>{
+    let node1 = new findMaximumValue.Node(2);
+    let node2 = new findMaximumValue.Node(7);
+    let node3 = new findMaximumValue.Node(5);
+    let node4 = new findMaximumValue.Node(2);
+    let node5 = new findMaximumValue.Node(6);
+    let node6 = new findMaximumValue.Node(9);
+    let node7 = new findMaximumValue.Node(5);
+    let node8 = new findMaximumValue.Node(11);
+    let node9 = new findMaximumValue.Node(4);
+
+    node1.left = node2;
+    node1.right = node3;
+    node2.left = node4;
+    node2.right = node5;
+    node5.left = node7;
+    node5.right = node8;
+    node3.right = node6;
+    node6.left = node9;
+
+    tree2 = new findMaximumValue.BinaryTreeMaxValue(node1);
+    tree3 = new findMaximumValue.BinaryTreeMaxValue(node3);
   });
-
-  it('Can successfully instantiate a tree with a single root node', () => {
-    const tree = new BinarySearchTree(10);
-    expect(tree.root.value).toBe(10);
+  it('it should return the maximum value stored in the tree1 (9)', ()=>{
+    console.log(tree3.findMaximumValue());
+    expect(tree3.findMaximumValue()).toEqual(9);
   });
-
-  it('Can successfully print the values in a breadth first fashion', () => {
-    const tree = new BinarySearchTree(null);
-    tree.add(10);
-    tree.add(5);
-    tree.add(2);
-    tree.add(7);
-    tree.add(15);
-    tree.add(12);
-    console.log('this is the test log', tree.breadthFirstTraversal(tree.root)[0]);
-    expect(tree.breadthFirstTraversal(tree.root)[0]).toBe(10);
-    expect(tree.breadthFirstTraversal(tree.root)[1]).toBe(5);
-    expect(tree.breadthFirstTraversal(tree.root)[2]).toBe(15);
-    expect(tree.breadthFirstTraversal(tree.root)[3]).toBe(2);
-    expect(tree.breadthFirstTraversal(tree.root)[4]).toBe(7);
-    expect(tree.breadthFirstTraversal(tree.root)[5]).toBe(12);
-  });
-
-  it('Can successfully print the values in a breadth first fashion with different numbers', () => {
-    const tree = new BinarySearchTree(null);
-    tree.add(11);
-    tree.add(6);
-    tree.add(3);
-    tree.add(8);
-    tree.add(16);
-    tree.add(13);
-    console.log('this is the test log', tree.breadthFirstTraversal(tree.root)[0]);
-    expect(tree.breadthFirstTraversal(tree.root)[0]).toBe(11);
-    expect(tree.breadthFirstTraversal(tree.root)[1]).toBe(6);
-    expect(tree.breadthFirstTraversal(tree.root)[2]).toBe(16);
-    expect(tree.breadthFirstTraversal(tree.root)[3]).toBe(3);
-    expect(tree.breadthFirstTraversal(tree.root)[4]).toBe(8);
-    expect(tree.breadthFirstTraversal(tree.root)[5]).toBe(13);
+  it('it should return the maximum value stored in the tree (11)', ()=>{
+    console.log(tree2.findMaximumValue());
+    expect(tree2.findMaximumValue()).toEqual(11);
   });
 });

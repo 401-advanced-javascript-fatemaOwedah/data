@@ -6,11 +6,11 @@ class Node {
     this.right = right;
   }
 }
-class BinaryTreeMaxValue {
+class BinaryTreeSumOdd {
   constructor(root = null){
     this.root = root;
   }
-  findMaximumValue(){
+  sumOfOddNumber(){
     let storage = [];
     let _walk = (node)=>{
       storage.push(node.val);
@@ -18,11 +18,13 @@ class BinaryTreeMaxValue {
       if (node.right) _walk(node.right);
     };
     _walk(this.root);
-    let maximum = 0;
+    let sum = 0;
     for (let i = 0; i < storage.length; i++) {
-      if(storage[i] > maximum) maximum = storage[i];
-    }
-    return maximum;
+      if(storage[i]%2==1) {
+        sum = sum + storage[i];
+      }
+    } 
+    return sum;
   }
 }
-module.exports = {BinaryTreeMaxValue,Node};
+module.exports = {BinaryTreeSumOdd,Node};

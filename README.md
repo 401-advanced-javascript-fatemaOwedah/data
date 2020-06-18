@@ -1,9 +1,10 @@
 # data
-## Stacks and Queues
-Create  find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+## Sumation odd numbers in BST.
+Create  sumation method in BST, Find the sum of all the odd numbers in a binary search tree. 
 ## Approach & Efficiency
-Create find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+## Sumation odd numbers in BST.
+Create  sumation method in BST, Find the sum of all the odd numbers in a binary search tree. 
 
 
 ## Solution
-![Solution](/assets/cc18.jpeg)
+![Solution](/assets/cc19.jpeg)

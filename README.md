@@ -11,6 +11,6 @@ Present a complete set of working tests
 Time o(n^2) ==> there is 2 while loop .
 space o(n^2) ==> divisions of the array.
 ## Solution
-![Solution](/assets/cc27.jpeg)
+![Solution](/assets/cc28.jpeg)
 ## Blog 
 [Blog](./BLOG.md)

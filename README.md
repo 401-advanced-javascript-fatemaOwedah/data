@@ -21,3 +21,7 @@ CodeChallenge-26 | [CodeChallenge-26](https://github.com/401-advanced-javascript
 CodeChallenge-27 | [CodeChallenge-27](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/18)
 CodeChallenge-28 | [CodeChallenge-28](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/19)
 CodeChallenge-30 | [CodeChallenge-30](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/20)
+CodeChallenge-31 | [CodeChallenge-31](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/21)
+CodeChallenge-32 | [CodeChallenge-31](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/22)
+CodeChallenge-33 | [CodeChallenge-31](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/23)
+CodeChallenge-34 | [CodeChallenge-31](https://github.com/401-advanced-javascript-fatemaOwedah/data/pull/24)

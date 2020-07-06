@@ -1,11 +1,11 @@
 # data
-## Repeated-word.
-Write a function that accepts a lengthy string parameter to Find the first repeated word in a book.
-Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+## Find common values in 2 binary trees.
+Find common values in 2 binary trees, Write a function called tree_intersection that takes two binary tree parameters.
+Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
 ## Approach & Efficiency
-Write a function that accepts a lengthy string parameter to Find the first repeated word in a book.
-Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+Find common values in 2 binary trees, Write a function called tree_intersection that takes two binary tree parameters.
+Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
 ## Big O
-add :Time o(n) there is for loop, space o(n)because i declare an array by split the string by the space.
+Time o(n^2) there is for loop inside while loop, space o(n)because i declare an array and push on it.
 ## Solution
-![Solution](/assets/cc31.jpeg)
+![Solution](/assets/cc32.jpeg)

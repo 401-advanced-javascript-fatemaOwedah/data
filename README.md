@@ -16,6 +16,6 @@ LEFT JOIN means all the values in the first hashmap are returned, and if values 
 The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic.
 Avoid utilizing any of the library methods available to your language.
 ## Big O
-Time o(n^2) there is for loop inside while loop, space o(n)because i declare an array and push on it.
+Time o(n) there is for loop, space o(n)because i declare an array and push on it.
 ## Solution
 ![Solution](/assets/cc33.jpeg)

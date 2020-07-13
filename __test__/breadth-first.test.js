@@ -1,7 +1,7 @@
   
 'use strict';
 
-const Graph = require('../challenges/graph/graph');
+const Graph = require('../challenges/breadthFirst/breadth-first');
 
 describe('Graph Class',()=>{
   it('Node can be successfully added to the graph',()=>{
@@ -116,4 +116,86 @@ describe('Graph Class',()=>{
     graph.addEdge(one,four);
     expect(graph.size()).toEqual(3);
   });
+  it('All appropriate neighbors can be retrieved from the graph',()=>{
+    const graph = new Graph.Graph();
+    const one = new Graph.Vertices('1');
+    const two = new Graph.Vertices('2');
+    const three = new Graph.Vertices('3');
+    const four = new Graph.Vertices('4');
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(four);
+    graph.addEdge(one,two);
+    graph.addEdge(one,four);
+    expect(graph.getNeighbors(one)).toEqual([{vertice:two,weight:0},{vertice:four,weight:0}]);
+    expect(graph.getNeighbors(three)).toEqual('not found');
+  });
+  
+});
+describe('Graph Class',()=>{
+  it('if start from end node',()=>{
+    const bfs = new Graph.Graph();
+    const one = new Graph.Vertices('A');
+    const two = new Graph.Vertices('B');
+    const three = new Graph.Vertices('C');
+    const four = new Graph.Vertices('D');
+    const five = new Graph.Vertices('E');
+    bfs.addNode(one);
+    bfs.addNode(two);
+    bfs.addNode(three);
+    bfs.addNode(four);
+    bfs.addNode(five);
+    bfs.addEdge(one,two);
+    bfs.addEdge(one,four);
+    bfs.addEdge(two,four);
+    bfs.addEdge(three,two);
+    bfs.addEdge(five,three);
+    bfs.addEdge(five,four);
+    let result = ['E', 'C', 'D', 'B'];
+    expect(bfs.bfs(five)).toEqual(result);
+  });
+  it('if start from start node',()=>{
+    const bfs = new Graph.Graph();
+    const one = new Graph.Vertices('A');
+    const two = new Graph.Vertices('B');
+    const three = new Graph.Vertices('C');
+    const four = new Graph.Vertices('D');
+    const five = new Graph.Vertices('E');
+    bfs.addNode(one);
+    bfs.addNode(two);
+    bfs.addNode(three);
+    bfs.addNode(four);
+    bfs.addNode(five);
+    bfs.addEdge(one,two);
+    bfs.addEdge(one,four);
+    bfs.addEdge(two,four);
+    bfs.addEdge(three,two);
+    bfs.addEdge(five,three);
+    bfs.addEdge(five,four);
+    let result = ['A', 'B', 'D'];
+    expect(bfs.bfs(one)).toEqual(result);
+  });
+  it('if start from middle node',()=>{
+    const bfs = new Graph.Graph();
+    const one = new Graph.Vertices('A');
+    const two = new Graph.Vertices('B');
+    const three = new Graph.Vertices('C');
+    const four = new Graph.Vertices('D');
+    const five = new Graph.Vertices('E');
+    bfs.addNode(one);
+    bfs.addNode(two);
+    bfs.addNode(three);
+    bfs.addNode(four);
+    bfs.addNode(five);
+    bfs.addEdge(one,two);
+    bfs.addEdge(one,four);
+    bfs.addEdge(two,four);
+    bfs.addEdge(three,two);
+    bfs.addEdge(five,three);
+    bfs.addEdge(five,four);
+    let result = ['C', 'B', 'D'];
+    expect(bfs.bfs(three)).toEqual(result);
+  });
+  
+
 });

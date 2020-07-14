@@ -69,6 +69,15 @@ class Graph {
     }
     return array;
   }
+  getEdge(arr) {
+    let n = this.getNeighbors(arr[0]);
+    for (let i = 0; i < n.length; i++) {
+      if (arr[1] === n[i].vertice) {
+        return `True, $${n[i].weight}`;
+      }
+    }
+    return `False, $0`;
+  }
 }
 
 module.exports = { Graph, Vertices };

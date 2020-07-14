@@ -1,7 +1,7 @@
   
 'use strict';
 
-const Graph = require('../challenges/breadthFirst/breadth-first');
+const Graph = require('../challenges/getEdge/get-edge');
 
 describe('Graph Class',()=>{
   it('Node can be successfully added to the graph',()=>{
@@ -196,6 +196,167 @@ describe('Graph Class',()=>{
     let result = ['C', 'B', 'D'];
     expect(bfs.bfs(three)).toEqual(result);
   });
-  
+});
 
+describe('Graph Class',()=>{
+  it('1===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Pandora','Arendelle'])).toEqual('True, $150');
+  });
+  it('2===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Pandora','Metrovilla'])).toEqual('True, $82');
+  });
+  it('3===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Arendelle','Metrovilla'])).toEqual('True, $99');
+  });
+  it('4===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Monstropolis','Arendelle'])).toEqual('True, $42');
+  });
+  it('5===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Naboo','Monstropolis'])).toEqual('True, $73');
+  });
+  it('6===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Naboo','Metrovilla'])).toEqual('True, $27');
+  });
+  it('7===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Pandora','Monstropolis'])).toEqual('False, $0');
+  });
+  it('8===>check price(edge) of journey',()=>{
+    const graph = new Graph.Graph();
+    const one = 'Pandora';
+    const two =  'Arendelle';
+    const three = 'Monstropolis';
+    const four =  'Metrovilla';
+    const five =  'Naboo';
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addEdge(one,two,150);
+    graph.addEdge(one,four,82);
+    graph.addEdge(two,four,99);
+    graph.addEdge(three,two,42);
+    graph.addEdge(five,three,73);
+    graph.addEdge(five,four,27);
+    expect(graph.getEdge(['Pandora','Naboo'])).toEqual('False, $0');
+  });
 });

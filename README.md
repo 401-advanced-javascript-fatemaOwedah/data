@@ -1,11 +1,11 @@
 # data
 ## Implement Graph.
-Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
+I will write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
 ## Approach & Efficiency
-Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
+I will write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
 ## Big O
-- Time o(n^2)  there is for loop inside while loop.
-- space o(n) ==> declare anew array and push in it.
+- Time o(n)  there is for loop.
+- space o(1) ==> output is a string.
 
 ## Solution
-![Solution](/assets/cc36.jpeg)
+![Solution](/assets/cc37.jpeg)

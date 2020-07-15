@@ -1,11 +1,11 @@
 # data
 ## Implement Graph.
-I will write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+I will write a method that accepts an adjacency list as a graph, and conducts a depth first traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order depth-first traversal order.
 ## Approach & Efficiency
-I will write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+I will write a method that accepts an adjacency list as a graph, and conducts a depth first traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order depth-first traversal order.
 ## Big O
-- Time o(n)  there is for loop.
-- space o(1) ==> output is a string.
+- Time o(n^2)  there is for loop inside while loop.
+- space o(n) ==> i declare an array ans i push in it.
 
 ## Solution
-![Solution](/assets/cc37.jpeg)
+![Solution](/assets/cc38.jpeg)

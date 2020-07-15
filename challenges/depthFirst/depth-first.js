@@ -78,6 +78,33 @@ class Graph {
     }
     return `False, $0`;
   }
+  depthFirst(startNode){
+    const queue = []; 
+    const vistedNodes = new Set(); 
+
+    queue.push(startNode);
+    vistedNodes.add(startNode);
+
+    while (queue.length) {
+      const currentNode = queue.pop();
+      const neighbors = this.getNeighbors(currentNode);
+      for (let neighbor of neighbors) {
+        const neighborNode = neighbor.vertice;
+        if(!vistedNodes.has(neighborNode)) {
+          vistedNodes.add(neighborNode);
+          queue.push(neighborNode);
+        }
+      }
+    }    
+    
+    let array = [];
+    for (let item of vistedNodes) {
+      array.push(item.value);
+    }
+    return array;  
+      
+  }
 }
+
 
 module.exports = { Graph, Vertices };

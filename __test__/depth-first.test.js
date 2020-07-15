@@ -1,7 +1,7 @@
   
 'use strict';
 
-const Graph = require('../challenges/getEdge/get-edge');
+const Graph = require('../challenges/depthFirst/depth-first');
 
 describe('Graph Class',()=>{
   it('Node can be successfully added to the graph',()=>{
@@ -358,5 +358,30 @@ describe('Graph Class',()=>{
     graph.addEdge(five,three,73);
     graph.addEdge(five,four,27);
     expect(graph.getEdge(['Pandora','Naboo'])).toEqual('False, $0');
+  });
+});
+describe('DepthFirst Class',()=>{
+  it('check traversial',()=>{
+    const graph = new Graph.Graph();
+    const one = new Graph.Vertices('1');
+    const two = new Graph.Vertices('2');
+    const three = new Graph.Vertices('3');
+    const four = new Graph.Vertices('4');
+    const five = new Graph.Vertices('5');
+    const six = new Graph.Vertices('6');
+    graph.addNode(one);
+    graph.addNode(two);
+    graph.addNode(three);
+    graph.addNode(four);
+    graph.addNode(five);
+    graph.addNode(six);
+    graph.addEdge(one,four);
+    graph.addEdge(one,two);
+    graph.addEdge(two,four);
+    graph.addEdge(two,three);
+    graph.addEdge(four,six);
+    graph.addEdge(four,five);
+    let result = ['1','4','2','3', '6','5'];
+    expect(graph.depthFirst(one)).toEqual(result);
   });
 });
